@@ -2,26 +2,28 @@
 % Please edit documentation in R/OnePrimerRemove.R
 \name{OnePrimerRemove}
 \alias{OnePrimerRemove}
-\title{Clean biological secuences of one primer}
+\title{Clean biological secuences}
 \usage{
-OnePrimerRemove(SEQ, PrimerOPR)
+OnePrimerRemove(SEQs, PrimerR)
 }
 \arguments{
-\item{SEQ}{dnastring or file with fasta format containing biological sequences that are to be cleaned.}
+\item{SEQs}{dnastring or file with fasta format containing biological sequences that are to be cleaned.}
 
-\item{PrimerOPR}{dnastring or file with fasta format containing the reverse primer/vector sequences to be removed.}
+\item{PrimerR}{dnastring or file with fasta format containing the reverse primer/vector sequences to be removed.}
 }
 \value{
-clean biological sequences
+clean biological sequences and visualization of the alignments
 }
 \description{
-Cleans biological sequences of one primer.
+Curates biological sequences of primer reverse.This cleaning is required for techniques such as cDNA-AFLP.
 }
 \examples{
-SEQ4 = DNAString("AATCG")
-SEQ5 = DNAString("CG")
-OnePrimerRemove (SEQ4,SEQ5)
+SEQs = DNAString(paste("GCCTCGCCTCCCTCTTTGATCAGCTTCGCATATCAGGCAACAGCTCAATTT",
+"GGTACTTGTTCAAATAAGCATTTAGACCATCTGTTCCAAGAACCTTTGCAATCTT",
+"CACAAGGTGGTCATGGTACGCAGTC", sep=""))
+PrimerR= DNAString("GACTGCGTACCATGC")
+OnePrimerRemove (SEQs,PrimerR)
 }
 \author{
-Florencia I Pozzi, Gisela Y. Green, Ivana G. Barbona, Gustavo R. Rodriguez, Silvina A. Felitti
+Florencia I Pozzi and Silvina A. Felitti
 }

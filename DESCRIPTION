@@ -1,22 +1,20 @@
 Package: CleanBSequences
 Type: Package
-Title: Clean Biological Sequences
-Version: 0.4.0
-Date: 2018-05-08
-Author: Florencia I. Pozzi, Gisela Y. Green, Ivana G. Barbona, Gustavo R. Rodriguez, Silvina A. Felitti
+Title: Curing of Biological Sequences
+Version: 1.4.0
+Author: Florencia I. Pozzi, Silvina A. Felitti
 Maintainer: Florencia I. Pozzi <florenciapoz@hotmail.com>
-Description: Cleans biological sequences massively, quickly, without errors and 
- without internet connection.  Biological sequences cleaning is performed by 
+Description: Curates biological sequences massively, quickly, without errors and 
+ without internet connection.  Biological sequences curing is performed by 
  aligning the forward and / or revers primers or ends of cloning vectors with the sequences 
  to be cleaned. After the alignment, new subsequences are generated without biological fragment 
  not desired by the user.
- Pozzi et al (2016, ISSN:2314-1484).
-License: GPL-3
+ Pozzi et al (2020) <doi:10.1007/s00438-020-01671-z>.
+License: GPL (>= 2)
 Encoding: UTF-8
-LazyData: true
 Depends: Biostrings
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.2
 NeedsCompilation: no
-Packaged: 2018-05-09 17:39:40 UTC; Florencia Pozzi
+Packaged: 2022-04-27 17:08:53 UTC; Florencia
 Repository: CRAN
-Date/Publication: 2018-05-11 13:25:36 UTC
+Date/Publication: 2022-04-27 17:40:06 UTC

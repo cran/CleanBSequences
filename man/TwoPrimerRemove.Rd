@@ -2,29 +2,30 @@
 % Please edit documentation in R/TwoPrimersRemove.R
 \name{TwoPrimerRemove}
 \alias{TwoPrimerRemove}
-\title{Clean biological secuences of two primers}
+\title{Clean biological secuences}
 \usage{
 TwoPrimerRemove(SEQs, PrimerF, PrimerR)
 }
 \arguments{
-\item{SEQs}{file with fasta format containing biological sequences that are to be cleaned.}
+\item{SEQs}{DNAString containing biological sequences that are to be cleaned.}
 
-\item{PrimerF}{dnastring or file with fasta format containing the foward primer/vector sequences to be removed.}
+\item{PrimerF}{dnastring containing the foward primer/vector sequences to be removed.}
 
-\item{PrimerR}{dnastring or file with fasta format containing the reverse primer/vector sequences to be removed.}
+\item{PrimerR}{dnastring containing the reverse primer/vector sequences to be removed.}
 }
 \value{
-clean biological sequences
+clean biological sequences and visualization of the alignments
 }
 \description{
-Clean biological sequences of two restriction enzyme primers or cloning vectors.
+Curates biological sequences of two restriction enzyme primers or cloning vectors.This cleaning is required for techniques such as cDNA-AFLP.
 }
 \examples{
-SEQ1 = DNAString("AATCG")
-SEQ2 = DNAString("TT")
-SEQ3 = DNAString("CG")
-TwoPrimerRemove (SEQ1,SEQ2,SEQ3)
+SEQs = DNAString(paste("ACTTTCTGCTGCTTGTGGTCGCAATCAGAGTCCTGATGATGAGTCCTGA",
+"CCGAACCCTTTTTCTCCGTCATCCGTTGGTCCATGGTACGCAATCAGAG", sep = ""))
+PrimerF = DNAString("GATGAGTCCTGACCGAA")
+PrimerR = DNAString("GACTGCGTACCATGC")
+TwoPrimerRemove (SEQs,PrimerF,PrimerR)
 }
 \author{
-Florencia I Pozzi, Gisela Y. Green, Ivana G. Barbona, Gustavo R. Rodriguez, Silvina A. Felitti
+Florencia I Pozzi, Silvina A. Felitti
 }
