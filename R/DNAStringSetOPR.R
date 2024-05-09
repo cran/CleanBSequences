@@ -3,7 +3,12 @@
 #' @param SEQs file with fasta format containing biological sequences that are to be cleaned.
 #' @param PrimerR dnastring containing the reverse primer/vector sequences to be removed.
 #' @return clean biological sequences and visualization of the alignments
-#' @import Biostrings
+#' @import pwalign
+#' @importFrom Biostrings DNAStringSet
+#' @importFrom Biostrings vmatchPattern
+#' @importFrom Biostrings reverseComplement
+#' @importFrom Biostrings subseq
+#' @importFrom Biostrings writeXStringSet
 #' @author Florencia I Pozzi, Silvina A. Felitti
 #' @examples
 #' SEQs = readDNAStringSet(system.file("sequences","SeqInputOPR.fasta", package = "CleanBSequences"))

@@ -1,7 +1,7 @@
 Package: CleanBSequences
 Type: Package
 Title: Curing of Biological Sequences
-Version: 1.4.0
+Version: 2.3.0
 Author: Florencia I. Pozzi, Silvina A. Felitti
 Maintainer: Florencia I. Pozzi <florenciapoz@hotmail.com>
 Description: Curates biological sequences massively, quickly, without errors and 
@@ -12,9 +12,9 @@ Description: Curates biological sequences massively, quickly, without errors and
  Pozzi et al (2020) <doi:10.1007/s00438-020-01671-z>.
 License: GPL (>= 2)
 Encoding: UTF-8
-Depends: Biostrings
-RoxygenNote: 7.1.2
+Depends: pwalign, Biostrings
+RoxygenNote: 7.3.1
 NeedsCompilation: no
-Packaged: 2022-04-27 17:08:53 UTC; Florencia
+Packaged: 2024-05-09 04:01:00 UTC; ADMIN
 Repository: CRAN
-Date/Publication: 2022-04-27 17:40:06 UTC
+Date/Publication: 2024-05-09 18:10:02 UTC

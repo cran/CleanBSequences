@@ -4,6 +4,12 @@
 #' @param PrimerF dnastring containing the foward primer/vector sequences to be removed.
 #' @param PrimerR dnastring containing the reverse primer/vector sequences to be removed.
 #' @return clean biological sequences and visualization of the alignments
+#' @import pwalign
+#' @importFrom Biostrings DNAStringSet
+#' @importFrom Biostrings matchPattern
+#' @importFrom Biostrings reverseComplement
+#' @importFrom Biostrings subseq
+#' @importFrom Biostrings writeXStringSet
 #' @author Florencia I Pozzi, Silvina A. Felitti
 #' @examples
 #' SEQs = DNAString(paste("ACTTTCTGCTGCTTGTGGTCGCAATCAGAGTCCTGATGATGAGTCCTGA",

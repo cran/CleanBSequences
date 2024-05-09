@@ -7,9 +7,9 @@
 OnePrimerRemove(SEQs, PrimerR)
 }
 \arguments{
-\item{SEQs}{dnastring or file with fasta format containing biological sequences that are to be cleaned.}
+\item{SEQs}{dnastring containing biological sequences that are to be cleaned.}
 
-\item{PrimerR}{dnastring or file with fasta format containing the reverse primer/vector sequences to be removed.}
+\item{PrimerR}{dnastring containing the reverse primer/vector sequences to be removed.}
 }
 \value{
 clean biological sequences and visualization of the alignments
